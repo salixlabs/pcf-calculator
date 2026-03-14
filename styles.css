@@ -47,8 +47,9 @@ body {
 
 .site-header {
     width: 100%;
+    min-height: 110px;
     padding: 12px 0;
-    margin-bottom: 8px;
+    margin-bottom: 24px;
     text-align: center;
     box-sizing: border-box;
     position: relative;
