@@ -244,6 +244,37 @@
         .deck-calc-main {
             margin-top: 8px;
         }
+
+        /* Mobile: stack header so logo, title, and reset don't overlap */
+        @media (max-width: 600px) {
+            .deck-calc-header {
+                flex-direction: column;
+                min-height: auto;
+                padding: 12px 8px 16px;
+                align-items: center;
+                margin-bottom: 16px;
+            }
+            .deck-calc-header .logo {
+                position: static;
+                transform: none;
+                width: 72px;
+                margin: 0 auto 8px;
+            }
+            .deck-calc-header .logo img {
+                max-width: 72px;
+            }
+            .deck-calc-header h1 {
+                margin: 0;
+                padding: 0 8px;
+                font-size: 18px;
+                text-align: center;
+            }
+            .deck-calc-header .reset-button {
+                position: static;
+                transform: none;
+                margin-top: 8px;
+            }
+        }
     </style>
     <script>
         // Check if logged in
@@ -254,7 +285,7 @@
 </head>
 <body>
     <div class="container">
-        <header class="site-header">
+        <header class="site-header deck-calc-header">
             <div class="logo">
                 <a href="../../index.html">
                     <img src="../../Assets/logo/PCF Logo.png" alt="PCF Logo">
