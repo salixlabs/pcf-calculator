@@ -1,6 +1,6 @@
 ## PCF Deck Calculator
 
-Deck calculator for **PCF**. Hosted at **salix.agency**.
+Deck calculator for **PCF**. Hosted at **pcf.salixagency.com**.
 
 PCF does not do roofing—this site is for **decks only** (and optional other trade tools).
 
@@ -13,7 +13,7 @@ PCF does not do roofing—this site is for **decks only** (and optional other tr
 
 ### To Do
 
-- [x] Rebrand from Orca to PCF (green/black theme, PCF logo, salix.agency)
+- [x] Rebrand from Orca to PCF (green/black theme, PCF logo, pcf.salixagency.com)
 - [x] Remove roofing section (PCF decks only)
 - [ ] Fix formatting on the deck calculator if needed
 - [ ] Remove "Back to Calculator" on product photos pages (if desired)
@@ -24,6 +24,6 @@ PCF does not do roofing—this site is for **decks only** (and optional other tr
 
 Default credentials: **PCF** / **PCF**
 
-### Deploying to salix.agency
+### Deploying to pcf.salixagency.com
 
-The `CNAME` file is set to `salix.agency`. Deploy the repo to your host (e.g. GitHub Pages) and point the custom domain to salix.agency.
+The `CNAME` file is set to `pcf.salixagency.com`. Deploy the repo to your host (e.g. GitHub Pages) and point the custom domain to pcf.salixagency.com.

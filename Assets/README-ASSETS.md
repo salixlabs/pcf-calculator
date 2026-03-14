@@ -1,6 +1,6 @@
 # PCF Calculator Assets Directory Structure
 
-This directory contains all the assets for the PCF deck calculator and galleries (salix.agency). The structure is organized by trades and product types.
+This directory contains all the assets for the PCF deck calculator and galleries (pcf.salixagency.com). The structure is organized by trades and product types.
 
 ## Directory Structure
 
