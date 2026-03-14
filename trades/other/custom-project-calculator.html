@@ -48,7 +48,7 @@
         .whale-tail {
             width: 100%;
             height: 100%;
-            background-image: url('../../Assets/logo/ORE-tail.png');
+            background-image: url('../../Assets/logo/PCF%20Logo.png');
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
@@ -319,7 +319,7 @@
     </style>
     <script>
         // Check if logged in
-        if (localStorage.getItem('orcaLoggedIn') !== 'true') {
+        if (localStorage.getItem('pcfLoggedIn') !== 'true') {
             window.location.href = '/';
         }
     </script>
@@ -329,7 +329,7 @@
         <header class="site-header">
             <div class="logo">
                 <a href="index.html">
-                    <img src="../../Assets/logo/ORE-horizontal-full.png" alt="Orca Roofing & Exteriors Logo">
+                    <img src="../../Assets/logo/PCF Logo.png" alt="PCF Logo">
                 </a>
             </div>
             <h1>Custom Project Calculator</h1>
@@ -424,7 +424,7 @@
                 <div class="margin-option" data-margin="0.45">
                     <h3>45% Margin</h3>
                     <div class="price" id="price45">$0.00</div>
-                    <div class="margin-percent">Roofing Projects</div>
+                    <div class="margin-percent">Standard Projects</div>
                 </div>
                 <div class="margin-option selected" data-margin="0.55">
                     <h3>55% Margin</h3>
@@ -453,7 +453,7 @@
     <script src="custom-project-calculator.js"></script>
     <script>
         function logout() {
-            localStorage.removeItem('orcaLoggedIn');
+            localStorage.removeItem('pcfLoggedIn');
             window.location.href = '/';
         }
 
@@ -497,7 +497,7 @@
             const doc = new jsPDF();
             
             // Set up fonts and colors
-            const primaryColor = [196, 167, 125]; // #c4a77d
+            const primaryColor = [45, 125, 70]; // #2d7d46 PCF green
             const darkColor = [51, 51, 51]; // #333333
             
             // Header
@@ -523,14 +523,14 @@
                 doc.rect(20, 10, 30, 20, 'F');
                 doc.setTextColor(...darkColor);
                 doc.setFontSize(12);
-                doc.text('ORCA', 25, 22);
+                doc.text('PCF', 25, 22);
                 doc.text('ROOFING & EXTERIORS', 25, 28);
                 
                 // Continue with the rest of the PDF generation
                 generatePDFContent();
             };
             
-            logoImg.src = '../../Assets/logo/ORE-horizontal-full.png';
+            logoImg.src = '../../Assets/logo/PCF Logo.png';
             
             // Function to generate the rest of the PDF content
             function generatePDFContent() {
@@ -576,7 +576,7 @@
             doc.setFont('helvetica', 'normal');
             doc.text('This quote is valid for 30 days from the date above.', 20, 150);
             doc.text('For questions or to schedule this project, please contact us.', 20, 160);
-            doc.text('Thank you for choosing Orca Roofing & Exteriors!', 20, 170);
+            doc.text('Thank you for choosing PCF!', 20, 170);
             
                 // Open PDF in new browser tab
                 const pdfBlob = doc.output('blob');

@@ -1,12 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Arboria:wght@400;500;700&display=swap');
 
 :root {
-    --primary-dark: #333333;    /* HEX: #333333, RGB: 51 51 51 */
-    --primary-light: #E5DACC;   /* HEX: #E5DACC, RGB: 229 218 204 */
-    --primary-gold: #BB945B;    /* HEX: #BB945B, RGB: 187 148 91 */
-    --background-color: #f5f1ec; /* Lighter version of #e3dace */
-    --border-color: #E5DACC;
-    --text-color: #333333;
+    /* PCF brand: green and black */
+    --primary-dark: #1a1a1a;
+    --primary-black: #1a1a1a;
+    --primary-green: #1a472a;
+    --accent-green: #2d7d46;
+    --primary-light: #e8f0ea;
+    --primary-gold: #2d7d46;    /* accent (green) for highlights */
+    --background-color: #f0f4f0;
+    --border-color: #c5d9c9;
+    --text-color: #1a1a1a;
 }
 
 body {
@@ -85,7 +89,7 @@ body {
 
 h2 {
     color: var(--primary-dark);
-    border-bottom: 1px solid var(--primary-gold);
+    border-bottom: 1px solid var(--primary-green);
     padding-bottom: 3px;
     margin: 8px 0 5px;
     font-size: 16px;
@@ -688,7 +692,7 @@ li {
 
 .summary-section {
     background-color: var(--primary-light);
-    background-image: url('Assets/logo/ORE-tail.png');
+    background-image: url('Assets/logo/PCF%20Logo.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: 120px;

@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Orca Construction - Other Trades</title>
+    <title>PCF Other Trades | salix.agency</title>
     <link rel="stylesheet" href="../../css/main.css">
     <script>
         // Check if logged in
-        if (localStorage.getItem('orcaLoggedIn') !== 'true') {
+        if (localStorage.getItem('pcfLoggedIn') !== 'true') {
             window.location.href = '/';
         }
     </script>
@@ -17,23 +17,23 @@
         <button class="logout-button" onclick="logout()">Logout</button>
         <div class="content-header">
             <a href="../../index.html">
-                <img src="../../Assets/logo/ORE-horizontal-full.png" alt="Orca Roofing & Exteriors Logo">
+                <img src="../../Assets/logo/PCF Logo.png" alt="PCF Logo">
             </a>
             <h1>Other Trades</h1>
         </div>
         <div class="button-grid">
             <a href="custom-project-calculator.html" class="nav-button">
-                <img src="../../Assets/logo/ORE-tail.png" alt="Custom Project Calculator">
+                <img src="../../Assets/logo/PCF Logo.png" alt="Custom Project Calculator">
                 <h2>Custom Project Calculator</h2>
                 <p>Calculate labor, materials, and pricing for custom projects</p>
             </a>
             <a href="calculator.html" class="nav-button">
-                <img src="../../Assets/logo/ORE-tail.png" alt="Specialized Calculators">
+                <img src="../../Assets/logo/PCF Logo.png" alt="Specialized Calculators">
                 <h2>Specialized Calculators</h2>
                 <p>Access calculators for various construction trades and specialties</p>
             </a>
             <div class="nav-button" style="opacity: 0.5; cursor: default;">
-                <img src="../../Assets/logo/ORE-tail.png" alt="Coming Soon">
+                <img src="../../Assets/logo/PCF Logo.png" alt="Coming Soon">
                 <h2>More Tools</h2>
                 <p>Additional trade-specific tools and calculators coming soon</p>
             </div>
@@ -42,7 +42,7 @@
 
     <script>
         function logout() {
-            localStorage.removeItem('orcaLoggedIn');
+            localStorage.removeItem('pcfLoggedIn');
             window.location.href = '/';
         }
     </script>

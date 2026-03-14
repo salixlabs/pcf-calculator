@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Orca Construction - Decking</title>
+    <title>PCF Decking | salix.agency</title>
     <link rel="stylesheet" href="../../css/main.css">
     <link rel="stylesheet" href="../../css/buttons.css">
     <script>
         // Check if logged in
-        if (localStorage.getItem('orcaLoggedIn') !== 'true') {
+        if (localStorage.getItem('pcfLoggedIn') !== 'true') {
             window.location.href = '/';
         }
     </script>
@@ -18,18 +18,18 @@
         <button class="logout-button" onclick="logout()">Logout</button>
         <div class="content-header">
             <a href="../../index.html">
-                <img src="../../Assets/logo/ORE-horizontal-full.png" alt="Orca Roofing & Exteriors Logo">
+                <img src="../../Assets/logo/PCF Logo.png" alt="PCF Logo">
             </a>
             <h1>Decking</h1>
         </div>
         <div class="button-grid">
             <a href="calculator.html" class="nav-button">
-                <img src="../../Assets/logo/ORE-tail.png" alt="Deck Calculator">
+                <img src="../../Assets/logo/PCF Logo.png" alt="Deck Calculator">
                 <h2>Deck Calculator</h2>
                 <p>Calculate costs for deck construction including materials, labor, and additional features</p>
             </a>
             <a href="gallery/index.html" class="nav-button">
-                <img src="../../Assets/logo/ORE-tail.png" alt="Deck Gallery">
+                <img src="../../Assets/logo/PCF Logo.png" alt="Deck Gallery">
                 <h2>Deck Gallery</h2>
                 <p>Browse our collection of deck projects, materials, and design options</p>
             </a>
@@ -38,7 +38,7 @@
 
     <script>
         function logout() {
-            localStorage.removeItem('orcaLoggedIn');
+            localStorage.removeItem('pcfLoggedIn');
             window.location.href = '/';
         }
     </script>

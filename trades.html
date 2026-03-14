@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Orca Construction - Trades</title>
+    <title>PCF - Trades | salix.agency</title>
     <link rel="stylesheet" href="css/main.css">
     <script>
         // Check if logged in
-        if (localStorage.getItem('orcaLoggedIn') !== 'true') {
+        if (localStorage.getItem('pcfLoggedIn') !== 'true') {
             window.location.href = '/';
         }
     </script>
@@ -16,33 +16,28 @@
     <div class="container">
         <button class="logout-button" onclick="logout()">Logout</button>
         <div class="content-header">
-            <a href="trades.html">
-                <img src="Assets/logo/ORE-horizontal-full.png" alt="Orca Roofing & Exteriors Logo">
+            <a href="index.html">
+                <img src="Assets/logo/PCF Logo.png" alt="PCF Logo">
             </a>
             <h1>Select Trade</h1>
         </div>
         <div class="button-grid">
-            <a href="trades/roofing/index.html" class="nav-button">
-                <img src="Assets/logo/ORE-tail.png" alt="Roofing">
-                <h2>Roofing</h2>
-                <p>Access roofing calculators and photo galleries</p>
-            </a>
             <a href="trades/decking/index.html" class="nav-button">
-                <img src="Assets/logo/ORE-tail.png" alt="Decking">
+                <img src="Assets/logo/PCF Logo.png" alt="Decking">
                 <h2>Decking</h2>
-                <p>Access deck calculators and photo galleries</p>
+                <p>Deck calculator and photo galleries</p>
             </a>
             <a href="trades/other/index.html" class="nav-button">
-                <img src="Assets/logo/ORE-tail.png" alt="Other Trades">
+                <img src="Assets/logo/PCF Logo.png" alt="Other Trades">
                 <h2>Other Trades</h2>
-                <p>Access specialized calculators for various trades</p>
+                <p>Specialized calculators</p>
             </a>
         </div>
     </div>
 
     <script>
         function logout() {
-            localStorage.removeItem('orcaLoggedIn');
+            localStorage.removeItem('pcfLoggedIn');
             window.location.href = '/';
         }
     </script>

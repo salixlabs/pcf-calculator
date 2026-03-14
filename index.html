@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Orca Construction</title>
+    <title>PCF Deck Calculator | salix.agency</title>
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/buttons.css">
     <style>
@@ -49,7 +49,7 @@
             color: #666;
         }
         .login-form button {
-            background-color: #c4a77d;
+            background-color: #1a472a;
             color: white;
             padding: 0.75rem;
             border: none;
@@ -61,7 +61,7 @@
             margin-top: 0.5rem;
         }
         .login-form button:hover {
-            background-color: #b39871;
+            background-color: #2d7d46;
         }
 
         /* Responsive styles for the trades container */
@@ -163,7 +163,7 @@
 <body>
     <!-- Login Screen -->
     <div class="login-container" id="loginContainer">
-        <img src="Assets/logo/ORE-horizontal-full.png" alt="Orca Roofing & Exteriors Logo" class="login-logo">
+        <img src="Assets/logo/PCF Logo.png" alt="PCF Logo" class="login-logo">
         <div class="login-form">
             <input type="text" placeholder="Username" id="username" required>
             <input type="password" placeholder="Password" id="password" required>
@@ -175,30 +175,25 @@
     <div class="container" id="calculatorContainer" style="display: none;">
         <button class="logout-button" onclick="logout()">Logout</button>
         <div class="content-header">
-            <img src="Assets/logo/ORE-horizontal-full.png" alt="Orca Roofing & Exteriors Logo">
+            <img src="Assets/logo/PCF Logo.png" alt="PCF Logo">
         </div>
         <div class="button-grid">
-            <a href="trades/roofing/index.html" class="nav-button">
-                <img src="Assets/logo/ORE-tail.png" alt="Roofing">
-                <h2>Roofing</h2>
-                <p>Access roofing calculators and photo galleries</p>
-            </a>
             <a href="trades/decking/index.html" class="nav-button">
-                <img src="Assets/logo/ORE-tail.png" alt="Decking">
+                <img src="Assets/logo/PCF Logo.png" alt="Decking">
                 <h2>Decking</h2>
-                <p>Access deck calculators and photo galleries</p>
+                <p>Deck calculator and photo galleries</p>
             </a>
             <a href="trades/other/index.html" class="nav-button">
-                <img src="Assets/logo/ORE-tail.png" alt="Other Trades">
+                <img src="Assets/logo/PCF Logo.png" alt="Other Trades">
                 <h2>Other Trades</h2>
-                <p>Access specialized calculators for various trades</p>
+                <p>Specialized calculators</p>
             </a>
         </div>
     </div>
 
     <script>
         // Check if already logged in
-        if (localStorage.getItem('orcaLoggedIn') === 'true') {
+        if (localStorage.getItem('pcfLoggedIn') === 'true') {
             document.getElementById('loginContainer').style.display = 'none';
             document.getElementById('calculatorContainer').style.display = 'block';
         }
@@ -207,8 +202,8 @@
             const username = document.getElementById('username').value;
             const password = document.getElementById('password').value;
             
-            if (username === 'ORE' && password === 'ORE') {
-                localStorage.setItem('orcaLoggedIn', 'true');
+            if (username === 'PCF' && password === 'PCF') {
+                localStorage.setItem('pcfLoggedIn', 'true');
                 document.getElementById('loginContainer').style.display = 'none';
                 document.getElementById('calculatorContainer').style.display = 'block';
             } else {
@@ -217,7 +212,7 @@
         }
 
         function logout() {
-            localStorage.removeItem('orcaLoggedIn');
+            localStorage.removeItem('pcfLoggedIn');
             window.location.reload();
         }
     </script>

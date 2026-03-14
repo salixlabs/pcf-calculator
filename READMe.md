@@ -1,22 +1,29 @@
-## Orca Roofing & Exteriors Construction Calculators
+## PCF Deck Calculator
 
-This is a website that will contain a collection of calculators and other web apps for our construction company.
+Deck calculator for **PCF**. Hosted at **salix.agency**.
+
+PCF does not do roofing—this site is for **decks only** (and optional other trade tools).
 
 ### Features
 
-- [x] Deck Calculator
-- [x] Ventilation Calculator
-- [ ] Financing Calculator
-- [ ] Roof Calculator
-- [ ] Photo gallery of previous projects
+- [x] **Deck Calculator** – Estimate deck costs (materials, railings, steps, labor)
+- [x] Deck photo galleries by product type
+- [ ] Financing calculator
+- [ ] Add photos to all product folders
 
 ### To Do
 
-- [x] restart this project by pulling in the old calculator
-- [x] delete all the new
-- [ ] Fix the formatting on the deck calculator
-- [ ] Remove the double whale tail on the deck calculator
-- [ ] remove the "Back to Calculator" button on the product photos pages
-- [ ] create a "next product" and "previous product" button that takes you through the various products, but have it cycle only through that folder 
-- [] add photos to all of the folders
+- [x] Rebrand from Orca to PCF (green/black theme, PCF logo, salix.agency)
+- [x] Remove roofing section (PCF decks only)
+- [ ] Fix formatting on the deck calculator if needed
+- [ ] Remove "Back to Calculator" on product photos pages (if desired)
+- [ ] "Next" / "Previous" product buttons that cycle within each folder
+- [ ] Add photos to all product folders
 
+### Login
+
+Default credentials: **PCF** / **PCF**
+
+### Deploying to salix.agency
+
+The `CNAME` file is set to `salix.agency`. Deploy the repo to your host (e.g. GitHub Pages) and point the custom domain to salix.agency.

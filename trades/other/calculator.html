@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../../css/buttons.css">
     <script>
         // Check if logged in
-        if (localStorage.getItem('orcaLoggedIn') !== 'true') {
+        if (localStorage.getItem('pcfLoggedIn') !== 'true') {
             window.location.href = '/';
         } else {
             // Show the container when logged in
@@ -23,39 +23,39 @@
         <button class="logout-button" onclick="logout()">Logout</button>
         <div class="content-header">
             <a href="index.html">
-                <img src="../../Assets/logo/ORE-horizontal-full.png" alt="Orca Roofing & Exteriors Logo">
+                <img src="../../Assets/logo/PCF Logo.png" alt="PCF Logo">
             </a>
             <h1>Specialized Calculators</h1>
         </div>
 
         <div class="button-grid">
             <div class="nav-button" style="opacity: 0.5; cursor: default;">
-                <img src="../../Assets/logo/ORE-tail.png" alt="Coming Soon">
+                <img src="../../Assets/logo/PCF Logo.png" alt="Coming Soon">
                 <h2>Electrical Calculator</h2>
                 <p>Calculate electrical requirements and materials</p>
             </div>
             <div class="nav-button" style="opacity: 0.5; cursor: default;">
-                <img src="../../Assets/logo/ORE-tail.png" alt="Coming Soon">
+                <img src="../../Assets/logo/PCF Logo.png" alt="Coming Soon">
                 <h2>Plumbing Calculator</h2>
                 <p>Estimate plumbing materials and labor costs</p>
             </div>
             <div class="nav-button" style="opacity: 0.5; cursor: default;">
-                <img src="../../Assets/logo/ORE-tail.png" alt="Coming Soon">
+                <img src="../../Assets/logo/PCF Logo.png" alt="Coming Soon">
                 <h2>HVAC Calculator</h2>
                 <p>Calculate heating and cooling requirements</p>
             </div>
             <div class="nav-button" style="opacity: 0.5; cursor: default;">
-                <img src="../../Assets/logo/ORE-tail.png" alt="Coming Soon">
+                <img src="../../Assets/logo/PCF Logo.png" alt="Coming Soon">
                 <h2>Insulation Calculator</h2>
                 <p>Determine insulation needs and materials</p>
             </div>
             <div class="nav-button" style="opacity: 0.5; cursor: default;">
-                <img src="../../Assets/logo/ORE-tail.png" alt="Coming Soon">
+                <img src="../../Assets/logo/PCF Logo.png" alt="Coming Soon">
                 <h2>Drywall Calculator</h2>
                 <p>Calculate drywall sheets and finishing materials</p>
             </div>
             <div class="nav-button" style="opacity: 0.5; cursor: default;">
-                <img src="../../Assets/logo/ORE-tail.png" alt="Coming Soon">
+                <img src="../../Assets/logo/PCF Logo.png" alt="Coming Soon">
                 <h2>Paint Calculator</h2>
                 <p>Estimate paint quantities and coverage</p>
             </div>
@@ -69,7 +69,7 @@
 
     <script>
         function logout() {
-            localStorage.removeItem('orcaLoggedIn');
+            localStorage.removeItem('pcfLoggedIn');
             window.location.href = '/';
         }
     </script>

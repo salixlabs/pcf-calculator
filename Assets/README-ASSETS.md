@@ -1,14 +1,13 @@
-# Orca Construction Assets Directory Structure
+# PCF Calculator Assets Directory Structure
 
-This directory contains all the assets for the Orca Construction calculators and galleries. The structure is organized by trades and product types to scale with the growing number of products and images.
+This directory contains all the assets for the PCF deck calculator and galleries (salix.agency). The structure is organized by trades and product types.
 
 ## Directory Structure
 
 ```
 Assets/
 ├── logo/                   # Company logos and branding assets
-│   ├── ORE-horizontal-full.png
-│   └── ORE-tail.png
+│   └── PCF Logo.png
 ├── trades/                 # Main trades directory
 │   ├── decking/           # Decking trade assets
 │   │   ├── railings/      # Railing product types
@@ -25,15 +24,13 @@ Assets/
 │   │       ├── timbertech-prime/  # Contains TimberTech Prime photos
 │   │       ├── timbertech-landmark/ # Contains TimberTech Landmark photos
 │   │       └── timbertech-vintage/ # Contains TimberTech Vintage photos
-│   └── roofing/           # Roofing trade assets
-│       ├── shingles/      # Contains shingle product photos
-│       ├── ventilation/   # Contains ventilation product photos
-│       └── gutters/       # Contains gutter product photos
 ```
+
+**Note:** PCF does not do roofing. Only decking assets are used.
 
 ## Usage Guidelines
 
-1. Each trade has its own directory under `trades/`
+1. Decking trade has its own directory under `trades/decking/`
 2. Within each trade directory, create subdirectories for different product categories
 3. Each product category contains directories for specific product types
 4. Product type directories contain the photos directly (no additional subdirectories)
@@ -42,13 +39,13 @@ Assets/
 
 ## Adding New Content
 
-When adding new trades or products:
+When adding new deck products or categories:
 
-1. Follow the existing directory structure pattern
-2. Create appropriate subdirectories for new product categories
-3. Update relevant HTML/CSS files to point to the new asset locations
-4. Maintain consistent naming conventions
-5. Add appropriate README files for new major sections
+1. Follow the existing structure under `trades/decking/`
+2. Create subdirectories for new product categories (e.g. railings, decking)
+3. Update relevant HTML/CSS to point to the new asset paths
+4. Use lowercase, hyphen-separated directory names
+5. Add a README in new major sections if helpful
 
 ## Image Guidelines
 
