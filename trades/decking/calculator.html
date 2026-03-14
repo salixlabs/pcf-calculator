@@ -239,6 +239,11 @@
             background-color: white;
             color: var(--primary-dark);
         }
+
+        /* Clear space below header so logo doesn't overlap calculator */
+        .deck-calc-main {
+            margin-top: 8px;
+        }
     </style>
     <script>
         // Check if logged in
@@ -278,8 +283,8 @@
             </h1>
             <button class="reset-button" onclick="resetCalculator()">Reset</button>
         </header>
-        
-        <div class="main-layout">
+
+        <div class="main-layout deck-calc-main">
             <div class="left-column">
                 <div class="section">
                     <h2>Measurements</h2>
